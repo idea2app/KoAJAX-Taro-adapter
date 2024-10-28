@@ -1,0 +1,42 @@
+{
+  "name": "koajax-taro-adapter",
+  "version": "0.1.0",
+  "description": "A KoAJAX adapter for mini-app HTTP requests",
+  "keywords": [
+    "koajax",
+    "taro",
+    "request",
+    "fetch",
+    "miniapp",
+    "wechat",
+    "adapter"
+  ],
+  "author": "twcbnubio@gmail.com",
+  "license": "LGPL-3.0-or-later",
+  "homepage": "https://github.com/idea2app/KoAJAX-Taro-adapter/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idea2app/KoAJAX-Taro-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/idea2app/KoAJAX-Taro-adapter/issues"
+  },
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "dependencies": {
+    "koajax": "^3.0.2",
+    "miniprogram-blob": "^2.0.0",
+    "taro-fetch-polyfill": "0.5.0-rc.1",
+    "web-streams-polyfill": "^4.0.0"
+  },
+  "devDependencies": {
+    "typedoc": "^0.26.10",
+    "typedoc-plugin-mdn-links": "^3.3.5",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist/ docs/  &&  tsc  &&  typedoc source/",
+    "prepublishOnly": "npm run build"
+  }
+}
