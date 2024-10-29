@@ -19,11 +19,15 @@ npm i koajax koajax-taro-adapter
 ### Initialization
 
 ```javascript
-import { HTTPClient } from "koajax";
-import { request } from "koajax-taro-adapter";
+import { HTTPClient } from 'koajax';
+import { request } from 'koajax-taro-adapter';
 
 export const client = new HTTPClient({ baseRequest: request });
 ```
+
+## User cases
+
+1. Scaffold: https://github.com/idea2app/Taro-Vant-MobX-ts
 
 [1]: https://github.com/EasyWebApp/KoAJAX
 [2]: https://libraries.io/npm/koajax-taro-adapter
