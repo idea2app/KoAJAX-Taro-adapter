@@ -21,8 +21,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       taro-fetch-polyfill:
-        specifier: ^0.5.5
-        version: 0.5.5
+        specifier: ^0.5.7
+        version: 0.5.7
       web-streams-polyfill:
         specifier: ^4.1.0
         version: 4.1.0
@@ -1213,8 +1213,8 @@ packages:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
 
-  taro-fetch-polyfill@0.5.5:
-    resolution: {integrity: sha512-57a2EZY7zJA9kLA4vMlX6wZWXB5XzqgAYmK/vdfyjwZbeBcos78gelntmL5RJ1jRA7aoThzaDNXyffd7gu+yRw==}
+  taro-fetch-polyfill@0.5.7:
+    resolution: {integrity: sha512-ST4k5eybb+60WqIxECvxB2KQYZUE/Z8p5fHyrS72h1abfo/n8lI4AXl9XyqJ6Pti2V6E6jOz2wsgpsVHhwlHHg==}
     peerDependencies:
       '@tarojs/taro': '>=3'
 
@@ -2701,7 +2701,7 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
-  taro-fetch-polyfill@0.5.5:
+  taro-fetch-polyfill@0.5.7:
     dependencies:
       '@swc/helpers': 0.5.15
       '@ungap/url-search-params': 0.2.2
