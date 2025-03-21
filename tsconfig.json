@@ -13,6 +13,7 @@
     "name": "KoAJAX Taro adapter",
     "excludeExternals": true,
     "excludePrivate": true,
+    "readme": "./README.md",
     "plugin": ["typedoc-plugin-mdn-links"]
   }
 }
