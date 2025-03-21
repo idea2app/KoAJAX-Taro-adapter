@@ -85,7 +85,7 @@ export async function parseResponse<B>(
   responseType: Request['responseType'],
   downloadProgress: ProgressEventTarget
 ): Promise<Response<B>> {
-  const stream = globalThis.ReadableStream['from'](
+  const stream = ReadableStream.from(
     emitStreamProgress(
       body as ReadableStream<Uint8Array>,
       +headers.get('Content-Length'),

@@ -1,6 +1,6 @@
 {
   "name": "koajax-taro-adapter",
-  "version": "0.2.0-rc.2",
+  "version": "0.2.0-rc.3",
   "license": "LGPL-3.0-or-later",
   "author": "twcbnubio@gmail.com",
   "contributors": [
@@ -33,7 +33,7 @@
     "core-js-pure": "^3.41.0",
     "koajax": "^3.1.2",
     "miniprogram-blob": "^2.0.0",
-    "taro-fetch-polyfill": "^0.5.2",
+    "taro-fetch-polyfill": "^0.5.5",
     "web-streams-polyfill": "^4.1.0",
     "web-utility": "^4.4.3"
   },
