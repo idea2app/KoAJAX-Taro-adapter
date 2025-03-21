@@ -4,7 +4,8 @@
     "moduleResolution": "Node",
     "downlevelIteration": true,
     "declaration": true,
-    "lib": ["ES2019", "DOM", "DOM.Iterable"],
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
     "outDir": "dist"
   },
   "include": ["source/*.ts"],
