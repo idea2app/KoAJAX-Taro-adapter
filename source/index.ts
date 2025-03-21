@@ -1,3 +1,4 @@
+import EventTarget from '@mattkrick/event-target-polyfill';
 import fromAsync from 'core-js-pure/actual/array/from-async';
 import {
   parseBody,
@@ -12,6 +13,8 @@ import { Blob, fetch, Headers } from 'taro-fetch-polyfill';
 import { ReadableStream } from 'web-streams-polyfill';
 
 import { emitStreamProgress, streamFromProgress } from './utility';
+
+export * from './utility';
 
 export function request<B>({
   path,

@@ -1,6 +1,6 @@
 {
   "name": "koajax-taro-adapter",
-  "version": "0.2.0-rc.0",
+  "version": "0.2.0-rc.1",
   "license": "LGPL-3.0-or-later",
   "author": "twcbnubio@gmail.com",
   "contributors": [
@@ -27,6 +27,7 @@
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "dependencies": {
+    "@mattkrick/event-target-polyfill": "^0.1.0",
     "core-js-pure": "^3.41.0",
     "koajax": "^3.1.2",
     "miniprogram-blob": "^2.0.0",
