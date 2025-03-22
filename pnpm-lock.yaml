@@ -8,12 +8,12 @@ importers:
 
   .:
     dependencies:
-      '@mattkrick/event-target-polyfill':
-        specifier: ^0.1.0
-        version: 0.1.0
       core-js-pure:
         specifier: ^3.41.0
         version: 3.41.0
+      event-target-shim:
+        specifier: ^6.0.2
+        version: 6.0.2
       koajax:
         specifier: ^3.1.2
         version: 3.1.2(typescript@5.8.2)
@@ -106,9 +106,6 @@ packages:
     resolution: {integrity: sha512-4wvrf5BgnR8RpogHhtpCPJMKBmvyZPhhUtEwMJbXh0ni2BucpfF07jlmyM11zRqQ2XIq6PbC2j7W7UCCcm1rRQ==}
     cpu: [x64]
     os: [win32]
-
-  '@mattkrick/event-target-polyfill@0.1.0':
-    resolution: {integrity: sha512-QgFBfC/fjTxNGFRYuk2utG1qzNW+tJ+g099WeSTd4/RaGT8HdaA0fcLB0j+3CaljGeNx3Wu6Lg7QLhZmvfMKvg==}
 
   '@mischnic/json-sourcemap@0.1.1':
     resolution: {integrity: sha512-iA7+tyVqfrATAIsIRWQG+a7ZLLD0VaOCKV2Wd/v4mqIU3J9c4jx9p7S0nw1XH3gJCKNBOOwACOPYYSUu9pgT+w==}
@@ -769,6 +766,10 @@ packages:
     resolution: {integrity: sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==}
     engines: {node: '>=6'}
 
+  event-target-shim@6.0.2:
+    resolution: {integrity: sha512-8q3LsZjRezbFZ2PN+uP+Q7pnHUMmAOziU2vA2OwoFaKIXxlxl38IylhSSgUorWu/rf4er67w0ikBqjBFk/pomA==}
+    engines: {node: '>=10.13.0'}
+
   eventemitter3@5.0.1:
     resolution: {integrity: sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA==}
 
@@ -1331,8 +1332,6 @@ snapshots:
 
   '@lmdb/lmdb-win32-x64@2.8.5':
     optional: true
-
-  '@mattkrick/event-target-polyfill@0.1.0': {}
 
   '@mischnic/json-sourcemap@0.1.1':
     dependencies:
@@ -2272,6 +2271,8 @@ snapshots:
       is-arrayish: 0.2.1
 
   escalade@3.2.0: {}
+
+  event-target-shim@6.0.2: {}
 
   eventemitter3@5.0.1: {}
 

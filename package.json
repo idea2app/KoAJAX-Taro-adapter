@@ -1,6 +1,6 @@
 {
   "name": "koajax-taro-adapter",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "LGPL-3.0-or-later",
   "author": "twcbnubio@gmail.com",
   "contributors": [
@@ -29,7 +29,7 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "dependencies": {
-    "@mattkrick/event-target-polyfill": "^0.1.0",
+    "event-target-shim": "^6.0.2",
     "core-js-pure": "^3.41.0",
     "koajax": "^3.1.2",
     "miniprogram-blob": "^2.0.0",
@@ -59,9 +59,6 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "targets": {
     "main": {
-      "includeNodeModules": [
-        "@mattkrick/event-target-polyfill"
-      ],
       "optimize": true
     }
   },

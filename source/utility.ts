@@ -1,10 +1,11 @@
-import { ProgressData, ProgressEventTarget } from 'koajax';
+import { ProgressData } from 'koajax';
+import { EventTarget } from 'event-target-shim';
 import { ReadableStream } from 'web-streams-polyfill';
 import { createAsyncIterator } from 'web-utility';
 
 import { ProgressEvent } from './Event';
 
-export const streamFromProgress = <T extends ProgressEventTarget>(target: T) =>
+export const streamFromProgress = <T extends EventTarget>(target: T) =>
   createAsyncIterator<ProgressData, ProgressEvent<T>>(
     ({ next, complete, error }) => {
       const handleProgress = ({ loaded, total }: ProgressEvent) => {
@@ -24,7 +25,7 @@ export const streamFromProgress = <T extends ProgressEventTarget>(target: T) =>
 export async function* emitStreamProgress(
   stream: ReadableStream<Uint8Array>,
   total: number,
-  eventTarget: ProgressEventTarget
+  eventTarget: EventTarget
 ): AsyncGenerator<Uint8Array> {
   var loaded = 0;
 

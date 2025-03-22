@@ -1,10 +1,9 @@
-import EventTarget from '@mattkrick/event-target-polyfill';
+import { EventTarget } from 'event-target-shim';
 import fromAsync from 'core-js-pure/actual/array/from-async';
 import {
   parseBody,
   parseHeaders,
   ProgressData,
-  ProgressEventTarget,
   Request,
   RequestResult,
   Response
@@ -83,7 +82,7 @@ export function request<B>({
 export async function parseResponse<B>(
   { status, statusText, headers, body }: import('taro-fetch-polyfill').Response,
   responseType: Request['responseType'],
-  downloadProgress: ProgressEventTarget
+  downloadProgress: EventTarget
 ): Promise<Response<B>> {
   const stream = ReadableStream.from(
     emitStreamProgress(
