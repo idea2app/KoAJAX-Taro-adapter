@@ -1,5 +1,4 @@
 import { EventTarget } from 'event-target-shim';
-import fromAsync from 'core-js-pure/actual/array/from-async';
 import {
   parseBody,
   parseHeaders,
@@ -11,6 +10,7 @@ import {
 import { Blob, fetch, Headers } from 'taro-fetch-polyfill';
 import { ReadableStream } from 'web-streams-polyfill';
 
+import { fromAsync } from './Event';
 import { emitStreamProgress, streamFromProgress } from './utility';
 
 export * from './utility';

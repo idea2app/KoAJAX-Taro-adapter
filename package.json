@@ -1,6 +1,6 @@
 {
   "name": "koajax-taro-adapter",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "LGPL-3.0-or-later",
   "author": "twcbnubio@gmail.com",
   "contributors": [
@@ -30,7 +30,6 @@
   "module": "dist/index.esm.js",
   "dependencies": {
     "event-target-shim": "^6.0.2",
-    "core-js-pure": "^3.41.0",
     "koajax": "^3.1.2",
     "miniprogram-blob": "^2.0.0",
     "taro-fetch-polyfill": "^0.5.7",
@@ -38,15 +37,23 @@
     "web-utility": "^4.4.3"
   },
   "devDependencies": {
-    "@parcel/packager-ts": "~2.14.1",
-    "@parcel/transformer-typescript-types": "~2.14.1",
+    "@parcel/packager-ts": "~2.15.4",
+    "@parcel/transformer-typescript-types": "~2.15.4",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
-    "parcel": "~2.14.1",
+    "lint-staged": "^16.1.2",
+    "parcel": "~2.15.4",
     "prettier": "^3.5.3",
-    "typedoc": "^0.28.1",
-    "typedoc-plugin-mdn-links": "^5.0.1",
-    "typescript": "^5.8.2"
+    "typedoc": "^0.28.5",
+    "typedoc-plugin-mdn-links": "^5.0.2",
+    "typescript": "^5.8.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core",
+      "lmdb",
+      "msgpackr-extract"
+    ]
   },
   "prettier": {
     "singleQuote": true,

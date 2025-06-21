@@ -4,7 +4,7 @@
     "moduleResolution": "Node",
     "downlevelIteration": true,
     "declaration": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
     "outDir": "dist"
   },
