@@ -33,4 +33,4 @@ export const client = new HTTPClient({ baseRequest: request });
 [2]: https://libraries.io/npm/koajax-taro-adapter
 [3]: https://github.com/idea2app/KoAJAX-Taro-adapter/actions/workflows/main.yml
 [4]: https://www.jsdelivr.com/package/npm/koajax-taro-adapter
-[5]: https://nodei.co/npm/koajax-taro-adapter/
+[5]: https://npm.im/koajax-taro-adapter/
